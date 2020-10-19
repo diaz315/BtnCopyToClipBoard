@@ -2,23 +2,12 @@
 
 ## Project setup
 ```
-npm install
-```
+    import btncopytoclipboard from 'btncopytoclipboard'
+    Vue.use("btncopytoclipboard",btncopytoclipboard)
+    <btncopytoclipboard propertyname="Year" value="2021" buttontitle="Copy"/>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+    propertyname: tooltip information
+    value: value to copy
+    buttontitle: button title
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    if you want copy a model use :value="yourmodel"

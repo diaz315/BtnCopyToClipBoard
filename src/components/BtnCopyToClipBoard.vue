@@ -1,6 +1,6 @@
 <template>
     <a href="javascript:void(0)" v-on:click="copytoclipboard(value)" :title="'Copiar '+propertyname+' : '+value">
-        <button>{{titlebutton}}</button>
+        <button>{{buttontitle}}</button>
     </a>
 </template>
 
@@ -16,7 +16,7 @@
             
         }, props: {
             propertyname: String,
-            titlebutton: String,
+            buttontitle: String,
             value: [String, Number]
         },
         data() {
